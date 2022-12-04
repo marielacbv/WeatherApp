@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@500;600;700&family=Karla:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@500;600;700&family=Karla:ital,wght@1,200&family=Source+Code+Pro:ital,wght@0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/95e607d52d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>😶‍🌫️ Wheather App</title>
+  </head>
+  <body>
+    <div class="front">
+      <header>
+       
+        <form class = "searcher">
+        <div class="input-group mb-3 border border-3 ">
+           <button type="button" class="btn btn-light" id = "btn-current">Current</button>
+          <button
+            class="btn btn-outline-secondary fw-bold"
+            type="button"
+            id="button-addon1"
+          >
+            Search
+          </button>
+          <input
+            type="text"
+            class="form-control fw-bold"
+            placeholder="Search for your current city"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+            id = "city-search"
+          />
+        </div>
+        
+      </header>
+      <section>
+        <h1>
+          <div class = "city-weather">         
+            <span class="city">
+          </span>
+            <br />
+            <span class = "day-time">
+            Monday, 10:40 a.m.
+            </span>
+            <br />
+            <span id = "description">
+            
+            </span>
+          </div>
+ 
+          <div class="today-weather ">
+            <span style="font-size: 100px">
+              <i class="fa-solid fa-sun"></i>
+            </span>
+            <span class="temp"> <span id = "current-temp"></span>  <span class="degree"> <span class ="cent">°C</span> <span class="far">|°F</span> </span> </span>
+          </div>
+        </h1>
+      </section>
+      <footer>
+        <strong>Presipitation: 0% │ Humidity: <span id = "humidity"></span> % │ Wind: <span id = "wind"></span> Km/hr</strong>
+        <hr
+          style="
+            height: 10px;
+            border-width: 0;
+            color: black;
+            background-color: black;
+          "
+        />
+        <div class="container five-day">
+          <div class="row">
+            <div class="col-sm text-center">
+              <div class="card text-bg-dark"  style="--bs-bg-opacity: 0.5">
+                Monday <br />
+                <span style="font-size: 50px">
+                  <i class="fa-solid fa-sun"></i>
+                </span>
+                <br />
+               <span>24°C</span> 
+              </div>
+            </div>
+            <div class="col-sm text-center">
+              <div class="card">
+                Tuesday
+                <br />
+                <span style="font-size: 50px">
+                  <i class="fa-solid fa-wind"></i>
+                </span>
+                <br />
+                15°C
+              </div>
+            </div>
+            <div class="col-sm text-center">
+              <div class="card text-bg-dark" style="--bs-bg-opacity: 0.5" >
+                Wednesday
+                <br />
+                <span style="font-size: 50px">
+                  <i class="fa-solid fa-umbrella"></i>
+                </span>
+                <br />
+                12°C
+              </div>
+            </div>
+            <div class="col-sm text-center">
+              <div class="card">
+                Thursday
+                <br />
+                <span style="font-size: 50px">
+                  <i class="fa-solid fa-smog"></i>
+                </span>
+                <br />
+                10°C
+              </div>
+            </div>
+            <div class="col-sm text-center">
+              <div class="card text-bg-dark" style="--bs-bg-opacity: 0.5">
+                Friday
+                <br />
+                <span style="font-size: 50px">
+                  <i class="fa-solid fa-sun"></i>
+                </span>
+                <br />
+                20°C
+              </div>
+            </div>
+        </div>
+      </footer>
+    </div>
+
+    }
+    <script src="src/index.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,83 @@
+body {
+  background: #bface0;
+}
+
+header {
+  margin: 30px 0;
+}
+footer {
+  font-family: "Karla", sans-serif;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.today-weather {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+}
+.city,
+.temp,
+.degree {
+  background: -webkit-linear-gradient(#a5c9ca, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Source Code Pro", monospace;
+}
+
+.city {
+  font-family: "Karla", sans-serif;
+  font-size: 30px;
+  right: 0;
+  margin-right: -50px;
+  -webkit-text-stroke: 1px black;
+}
+.temp {
+  font-size: 150px;
+}
+
+.far {
+  font-size: 40px;
+}
+
+.degree {
+  position: relative;
+  font-size: 50px;
+  top: -74px;
+  right: 65px;
+}
+
+.front {
+  background-image: url("../images/art.jpg");
+  background-size: cover;
+  max-width: 60%;
+  margin: 50px auto;
+  padding: 30px 60px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 200px rgba(255, 202, 202, 0.3);
+  opacity: 0.7;
+}
+.five-day {
+  font-size: medium;
+  font-family: "Source Code Pro", monospace;
+}
+
+#button-addon1 {
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: darkgray;
+  color: grey;
+}
+
+#btn-current {
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: pink;
+  font-weight: bolder;
+  color: grey;
+}
+
+.city-weather{
+  font-size: 18px;
+}
